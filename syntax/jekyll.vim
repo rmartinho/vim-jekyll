@@ -1,3 +1,6 @@
+" Build upon Markdown syntax
+runtime! syntax/markdown.vim
+
 " Bring in YAML syntax for front matter
 unlet b:current_syntax
 syntax include @Yaml syntax/yaml.vim
