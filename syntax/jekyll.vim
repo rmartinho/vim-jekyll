@@ -11,8 +11,7 @@ unlet b:current_syntax
 syntax include @Cpp syntax/cpp.vim
 syntax region cppCodeSnippet matchgroup=Comment start=/^{% highlight cpp %}$/ end=/^{% endhighlight %}$/ keepend contains=@Cpp
 
-" Re-enable Markdown syntax
-let b:current_syntax='markdown'
+let b:current_syntax='jekyll'
 
 " Limit text width
 set textwidth=80
