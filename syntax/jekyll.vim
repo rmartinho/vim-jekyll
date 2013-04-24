@@ -8,7 +8,7 @@ syntax region yamlFrontmatter start=/\%^---$/ end=/^---$/ keepend contains=@Yaml
 
 " Bring in C++11 syntax for code snippets
 unlet b:current_syntax
-syntax include @Cpp syntax/cpp11.vim
+syntax include @Cpp syntax/cpp.vim
 syntax region cppCodeSnippet matchgroup=Comment start=/^{% highlight cpp %}$/ end=/^{% endhighlight %}$/ keepend contains=@Cpp
 
 " Re-enable Markdown syntax
